@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import BaseApp from './components/BaseApp';
+import { ConteudoProfessorLayout } from './components/conteudo_professor/ConteudoProfessorLayout';
+import CriaContaLayout from './components/cria_conto/CriaContoLayout';
+
+import InicioLayout from './components/inicio/InicioLayout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<BaseApp />}>
+          <Route index element={<InicioLayout />} />
+          <Route path='criar_conto' element={<CriaContaLayout />} />
+          <Route path='conteudo_professor' element={<ConteudoProfessorLayout />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
