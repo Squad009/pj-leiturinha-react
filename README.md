@@ -1,3 +1,3 @@
 # Leiturinha Com React
 
-## Reforando projeto base
+## Refatorando projeto base
