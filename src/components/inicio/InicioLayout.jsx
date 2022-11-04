@@ -8,7 +8,6 @@ export default function InicioLayout() {
     
     return(
         <>
-            <HeaderApp navigationMain={<NavigationMain />} searchMain={<SearchMain />} authentication={<Authentication />} />
             <InicioMain />
         </>
     );

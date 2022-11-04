@@ -12,7 +12,6 @@ import LeiturinhaCarrossel from "./LeiturinhaCarrossel";
 export default function LeiturinhaMain(){
     return(
         <div>
-            <HeaderApp navigationMain={<NavigationMain />} searchMain={<SearchMain />} authentication={<Authentication />} />
             <LeiturinhaBanner/>
             <div className="container">
                 <h4 className="titulo-mais-lidas title_font">As mais lidas da semana</h4>
