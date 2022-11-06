@@ -15,9 +15,9 @@ class NavigationMain extends Component {
 
                 <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><Link to="/" className="nav-link px-2 text-white">Home</Link></li>
-                    <li><Link to="/leiturinhas" className="nav-link px-2 text-white">Leiturinhas</Link></li>
-                    <li><a href="quizzes.html" className="nav-link px-2 text-white">Quizzes</a></li>
-                    <li><a href="sobre.html" className="nav-link px-2 text-white">Conheça a iniciativa</a></li>
+                    <li><a href="leiturinhas.html" className="nav-link px-2 text-white">Leiturinhas</a></li>
+                    <li><Link to="/quizzes" className="nav-link px-2 text-white">Quizzes</Link></li>
+                    <li><a href="sobre.html" className="nav-link px-2 text-white">Conheça a iniciativa</a></li>.
                 </ul>
             </>
         );
