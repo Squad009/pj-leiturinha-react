@@ -1,15 +1,14 @@
-import Authentication from '../../shared/header/Authentication';
-import NavigationMain from '../../shared/header/NavigationMain';
-import SearchMain from '../../shared/header/SearchMain';
+import { useState } from 'react';
 import HeaderApp from '../../shared/HeaderApp';
 import InicioMain from './InicioMain';
 
 export default function InicioLayout() {
+    const [isRegisterButtonClicked, setIsRegisterButtonClicked] = useState(false);
     
     return(
         <>
-            <HeaderApp navigationMain={<NavigationMain />} searchMain={<SearchMain />} authentication={<Authentication />} />
-            <InicioMain />
+            <HeaderApp setRegisterButton={setIsRegisterButtonClicked} />
+            <InicioMain registerButton={isRegisterButtonClicked} setRegisterButton={setIsRegisterButtonClicked} />
         </>
     );
 }
