@@ -1,0 +1,14 @@
+.box-login {
+    background-color: rgb(238, 240, 247, 0.8);
+    width: 35%;
+    min-width: 400px;
+    display: block;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+    padding: 2%;
+}
+.logo-position {
+    text-align: center;
+}

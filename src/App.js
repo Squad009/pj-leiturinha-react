@@ -6,7 +6,7 @@ import { ConteudoProfessorLayout } from "./components/conteudo_professor/Conteud
 import CriaContaLayout from "./components/cria_conto/CriaContoLayout";
 import LeiturinhaMain from "./components/leiturinha/LeiturinhaMain";
 import TestComponent from "./components/TestComponent";
-import HeaderApp from "./shared/HeaderApp";
+
 import InicioLayout from "./components/inicio/InicioLayout";
 import NavigationMain from "./shared/header/NavigationMain";
 import SearchMain from "./shared/header/SearchMain";
@@ -16,14 +16,14 @@ import ConhecaIniciativa from "./pages/ConhecaIniciativa";
 import Registrar from "./pages/Registrar";
 import Login from "./pages/Login";
 import PaginaNaoEncontrada from "./pages/PaginaNaoEncontrada";
+import HeaderAppLogin from "./shared/HeaderAppLogin";
 
 export default function App() {
   return (
     <>
     
     <Router>
-    <HeaderApp navigationMain={<NavigationMain />} searchMain={<SearchMain />} authentication={<Authentication />} />
-          
+          <HeaderAppLogin></HeaderAppLogin>
     <Routes>
       <Route path="/" element={<InicioLayout/>}></Route>
       <Route path="/leticia"  element={<TestComponent></TestComponent>}></Route>
@@ -42,25 +42,5 @@ export default function App() {
     </Routes>
     </Router>
     </>
-    // <Router>
-    //   <Routes>
-    //     <Route path="/" element={<BaseApp />}>
-    //       {/* <Route index element={<InicioLayout />} />
-    //        */}
-
-    //       <Route path="/home" element={<InicioLayout />} />
-    //       <Route path="criar_conto" element={<CriaContaLayout />} />
-    //       <Route
-    //         path="conteudo_professor"
-    //         element={<ConteudoProfessorLayout />}
-    //       />
-    //       <Route path="/leiturinhas" element={<LeiturinhaMain />} />
-    //       <Route
-    //         path="/leticia"
-    //         element={<TestComponent></TestComponent>}
-    //       ></Route>
-    //     </Route>
-    //   </Routes>
-    // </Router>
   );
 }

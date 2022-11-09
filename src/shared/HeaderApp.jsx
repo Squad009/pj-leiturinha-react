@@ -1,6 +1,7 @@
 import { Component } from 'react';
 
 
+
 class HeaderApp extends Component {
 
     render() {
@@ -22,4 +23,4 @@ class HeaderApp extends Component {
     }
 }
 
-export default HeaderApp;
+export default    HeaderApp; 

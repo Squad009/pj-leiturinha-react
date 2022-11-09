@@ -8,8 +8,8 @@ const withAuth = (Component) => {
         if (isAuth) {
           return <Component />;
         } else {
-          //return <Navigate to="/" replace></Navigate>
-          return <div className="pt-3" ><h1>Acesso Negado</h1></div>
+          return <Navigate to="/login" replace></Navigate>
+
         }
       };
     
