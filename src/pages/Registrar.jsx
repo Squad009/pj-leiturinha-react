@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-
+import validator from "validator";
 
 export default function Registrar() {
 
@@ -8,10 +8,13 @@ export default function Registrar() {
     const [password, setpassword] = useState("");
 
     const confirmarRegistro = (el)=>{
-        console.log(registro);
-        console.log(password);
-
-        localStorage.setItem(registro, password);
+        
+        if(validator.isEmail(registro)){
+            localStorage.setItem(registro, password);
+        
+        }else{
+            alert("E-mail informado não e válido");
+        }
         
         setpassword("");
         setregistro("");
@@ -25,13 +28,13 @@ export default function Registrar() {
                     <form class="col ">
                         <div class="form-group px-3">
                             <label>Email address</label>
-                            <input type="email" class="form-control" id="mailuser" value={registro} aria-describedby="emailHelp" onChange={(e)=>setregistro(e.target.value)} placeholder="Digite seu e-mail" />
+                            <input autoComplete='off' name="emailApp" type="email" class="form-control" id="emailApp" value={registro} aria-describedby="emailApp" onChange={(e)=>setregistro(e.target.value)} placeholder="Digite seu e-mail" />
 
                         </div>
 
                         <div class="form-group px-3">
                             <label >Senha</label>
-                            <input type="password" class="form-control" id="mailpwd" value={password} onChange={(e)=>setpassword(e.target.value)} aria-describedby="emailHelp" placeholder="Por favor, informar senha." />
+                            <input autoComplete='off' type="password" class="form-control" id="mailpwd" value={password} onChange={(e)=>setpassword(e.target.value)} aria-describedby="emailHelp" placeholder="Por favor, informar senha." />
                         </div>
 
                         <div class="d-flex justify-content-center p-3">

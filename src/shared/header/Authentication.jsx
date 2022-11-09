@@ -1,31 +1,36 @@
-import { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Modal, Button } from 'react-bootstrap';
+
+const Authentication = () => {
 
 
-
-class Authentication extends Component {
-
-    sairLogin =()=> {
-        localStorage.setItem("login_feito_com_sucesso",false)
+    const sairLogin = () => {
+       
+        localStorage.setItem("login_feito_com_sucesso", false)
     }
 
-    render() {
 
-        return(
+    return (
+        <>
             <div className="text-end">
-                            <Link to="/login" type="button" href="/login.html" className="btn btn-outline-light me-2 b" role="button">Entrar</Link>
+                <Link to="/login" type="button" href="/login.html" className="btn btn-outline-light me-2 b" role="button">Entrar</Link>
 
-                            
-                         <Link to="/registrar">
-                         <button type="button" className="btn btn-warning" data-bs-toggle="modal"
-                                data-bs-target="#modalRegistrar">Registrar-se</button>
-                         </Link>
-                         <button type='button' className='btn btn-primary' onClick={this.sairLogin}  >Sair</button>
-                         
+
+                <Link to="/registrar">
+                    <button type="button" className="btn btn-warning" data-bs-toggle="modal"
+                        data-bs-target="#modalRegistrar">Registrar-se</button>
+                </Link>
+                <button type='button' className='btn btn-primary' onClick={sairLogin}  >Sair</button>
+
 
             </div>
-        );
-    }
+
+          
+        </>
+
+    );
+
 }
 
 export default Authentication;
