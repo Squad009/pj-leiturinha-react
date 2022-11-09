@@ -1,6 +1,14 @@
+import PerfilAluno from "../perfil/PerfilAluno";
+
 export default function CadastroAluno({setIsStudent}) {
     function closeModal() {
         setIsStudent(false);
+    }
+
+    function handleNewUser() {
+        return (
+            <></>
+        )
     }
 
     return(
@@ -16,7 +24,7 @@ export default function CadastroAluno({setIsStudent}) {
                         </button>
                     </div>
                     <div className="modal-body teacher-modal-body">
-                        <form className="form">
+                        <form className="form" onSubmit={handleNewUser}>
                             <div className="form-group">
                                 <label htmlFor="teacherName">Nome Completo</label>
                                 <input type="text" className="form-control" id="teacherName" aria-describedby="nameHelp" placeholder="Ex.: João da Silva" required/>
@@ -29,13 +37,13 @@ export default function CadastroAluno({setIsStudent}) {
                                 <label htmlFor="teacherEmail">E-mail</label>
                                 <input type="email" className="form-control" id="teacherEmail" aria-describedby="emailHelp" placeholder="Ex.: joao.silva@email.com" required/>
                             </div>
-                            <div class="form-group">
-                                <label for="password">Senha</label>
-                                <input type="password" class="form-control" id="password" placeholder="**********" required/>
+                            <div className="form-group">
+                                <label htmlFor="password">Senha</label>
+                                <input type="password" className="form-control" id="password" placeholder="**********" required/>
                             </div>
-                            <div class="form-group">
-                                <label for="password">Repita a senha</label>
-                                <input type="password" class="form-control" id="password" placeholder="**********" required/>
+                            <div className="form-group">
+                                <label htmlFor="repeatPassword">Repita a senha</label>
+                                <input type="password" className="form-control" id="repeatPassword" placeholder="**********" required/>
                             </div>
                         </form>
                     </div>

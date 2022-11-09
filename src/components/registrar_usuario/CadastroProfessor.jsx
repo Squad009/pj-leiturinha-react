@@ -32,13 +32,13 @@ export default function CadastroProfessor({setIsTeacher}) {
                                 <option>E.E. Vila São Joaquim 2</option>
                                 <option>Outros</option>
                             </select>
-                            <div class="form-group">
-                                <label for="password">Senha</label>
-                                <input type="password" class="form-control" id="password" placeholder="**********" required/>
+                            <div className="form-group">
+                                <label htmlFor="password">Senha</label>
+                                <input type="password" className="form-control" id="password" placeholder="**********" required/>
                             </div>
-                            <div class="form-group">
-                                <label for="password">Repita a senha</label>
-                                <input type="password" class="form-control" id="password" placeholder="**********" required/>
+                            <div className="form-group">
+                                <label htmlFor="repeatPassword">Repita a senha</label>
+                                <input type="password" className="form-control" id="repeatPassword" placeholder="**********" required/>
                             </div>
                         </form>
                     </div>
