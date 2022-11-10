@@ -8,7 +8,8 @@
     border-radius: 5px;
     box-shadow: 3px 3px 10px #333;
     padding: 2%;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif
+    ;
 }
 .logo-position {
     text-align: center;
