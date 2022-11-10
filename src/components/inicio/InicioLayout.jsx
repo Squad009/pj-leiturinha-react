@@ -1,10 +1,6 @@
-import Authentication from '../../shared/header/Authentication';
-import NavigationMain from '../../shared/header/NavigationMain';
-import SearchMain from '../../shared/header/SearchMain';
-import HeaderApp from '../../shared/HeaderApp';
 import InicioMain from './InicioMain';
-
-export default function InicioLayout() {
+import withAuth from '../withAuth';
+ function InicioLayout() {
     
     return(
         <>
@@ -12,3 +8,5 @@ export default function InicioLayout() {
         </>
     );
 }
+
+export default withAuth(InicioLayout)

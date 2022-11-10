@@ -12,4 +12,4 @@ class TestComponent extends Component {
     }
 }  
 
-export default withAuth( TestComponent);
+export default  TestComponent;

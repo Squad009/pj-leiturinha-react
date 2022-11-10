@@ -23,16 +23,17 @@ export default function App() {
     <>
     
     <Router>
-          <HeaderAppLogin></HeaderAppLogin>
+          {/* <HeaderAppLogin></HeaderAppLogin> */}
     <Routes>
-      <Route path="/" element={<InicioLayout/>}></Route>
       <Route path="/leticia"  element={<TestComponent></TestComponent>}></Route>
       <Route path="/quizzes" element={<Quizzes />} />
       <Route path="/leiturinhas" element={<LeiturinhaMain />} />
       <Route path="/conhecainiciativa" element={<ConhecaIniciativa />} />
-      <Route path="/registrar" element={<Registrar />} />
+      <Route path="/registrar/estudante" element={<Registrar />} />
+      <Route path="/registrar/professor" element={<Registrar />} />
       <Route path="/login" element={<Login />} />
-
+      <Route path="/" element={<InicioLayout/>}></Route>
+     
       <Route path="/arearestrita" element={<TestComponent />} />
       
       <Route path="*" element={<PaginaNaoEncontrada />} />
