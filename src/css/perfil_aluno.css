@@ -93,6 +93,13 @@
     text-align: center;
 }
 
+/* Avaliação */
+
+.rating{
+    display: flex;
+    justify-content: center;
+}
+
 /* Responsividade */
 
 @media screen and (max-width: 991px) {

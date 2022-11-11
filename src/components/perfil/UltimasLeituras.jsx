@@ -1,12 +1,14 @@
-import CardUltimasLeituras from "./CardUltimasLeituras";
+import CardConto from "./CardConto";
 import TituloPerfilAluno from "./TituloPerfilAluno";
-import dataUltimasLeituras from "../../shared/mockedData/dataContos";
+import {dataUltimasLeituras, dataRecomendados} from "../../shared/mockedData/dataContos";
 
 export default function UltimasLeituras() {
     return(
         <>
             <TituloPerfilAluno titulo="Últimas Leituras" />
-            <CardUltimasLeituras data={dataUltimasLeituras} />
+            <CardConto data={dataUltimasLeituras} />
+            <TituloPerfilAluno titulo="Recomendações" />
+            <CardConto data={dataRecomendados} />
         </>
     )
 }
