@@ -1,5 +1,13 @@
+import InfoAluno from "./InfoAluno";
+import HeaderApp from "../../shared/HeaderApp";
+import UltimasLeituras from "./UltimasLeituras";
+
 export default function PerfilAluno() {
     return(
-        <h1>Perfil do aluno</h1>
+        <>
+            <HeaderApp />
+            <InfoAluno />
+            <UltimasLeituras />
+        </>
     )
 }
