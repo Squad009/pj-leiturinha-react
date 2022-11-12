@@ -19,8 +19,12 @@ h2 {
     text-align: center;
     color: #f2622e;
     font-size:larger;
+    
 }
 
 body {
-    background-color: blue;
+    background-image: linear-gradient(to bottom, #1e4dd9 0%, #a62e7c 100%);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
