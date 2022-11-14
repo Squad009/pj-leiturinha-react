@@ -9,7 +9,7 @@ class LeiturinhaBanner extends React.Component{
             <div className="banner">
                 <div className="container banner-elements legenda">
                     <div>
-                    <h2 className="title_font">Compartilhe e cresça!</h2>
+                    <h2 className="title_font margem_titulo">Compartilhe e cresça!</h2>
                     <p>Faça parte dessa comunidade, descubra mundos incríveis a cada palavra lida e divida as suas histórias
                         também!
                     </p>

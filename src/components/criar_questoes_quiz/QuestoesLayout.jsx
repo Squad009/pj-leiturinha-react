@@ -1,18 +1,17 @@
 import Footer from '../../shared/footer/Footer';
 import NavigationMain from '../../shared/header/NavigationMain';
 import HeaderApp from '../../shared/HeaderApp';
-import CriaContoMain from './CriaContoMain';
+import QuestoesMain from './QuestoesMain';
 
 
 
-export default function CriaContaLayout() {
+export default function QuestoesLayout() {
 
     return(
         <>
             <HeaderApp navigationMain={<NavigationMain />} />
-            <CriaContoMain />
+            <QuestoesMain />
             <Footer />
-           
         </>
     );
 }

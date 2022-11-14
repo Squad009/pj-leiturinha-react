@@ -43,10 +43,6 @@
     max-width: 100%;
     white-space: normal;
 }
-/* 
-input[type='file'] {
-    visibility: hidden;
-} */
 
 .imagem_info {
     border-left: 8px solid #888888;

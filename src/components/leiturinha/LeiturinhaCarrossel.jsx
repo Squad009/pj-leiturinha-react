@@ -37,7 +37,7 @@ function Item(props){
 
     return(
         <div className="container">
-            <h4 class="titulo-top-nacional title_font">{item.tituloCarrossel}</h4>
+            <h4 class="titulo-top-nacional title_font margem_titulo">{item.tituloCarrossel}</h4>
             <div class="card">
                 <div id="carroselNacional" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">

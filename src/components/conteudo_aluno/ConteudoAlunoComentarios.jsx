@@ -1,20 +1,15 @@
-import { Component } from 'react';
-import ComentarioForm from '../../shared/ComentarioForm';
+import React from "react";
 
-
-
-class ConteudoProfessorComentarios extends Component{
-
-    render() {
-
+export default class ConteudoAlunoComentarios extends React.Component{
+    render(){
         return(
             <section className="comentarios">
-                <div className="mb-3 d-flex flex-column mx-5">
-                    <h2 className="p-3">Comentários do Conteúdo</h2>
-                    <ComentarioForm />
+                <div className="d-flex justify-content-between mb-3">
+                    <h2 className="p-3">Comentários</h2>
+                    <button className="btn button_app_secondary m-3">Comentar</button>
                 </div>
                 <div className="ms-5">
-                    <h5><strong>João da Silva:</strong></h5>
+                    <h5><strong>Maria Joana:</strong></h5>
                     <p className="ms-3 p-2 bg-light border border-2 rounded">
                         Rem reiciendis voluptates est nesciunt quod est quidem dolorem et itaque eveniet et ratione
                         laboriosam! Nam nesciunt sunt aut quis nisi qui incidunt enim ut quam libero et consequuntur
@@ -24,7 +19,7 @@ class ConteudoProfessorComentarios extends Component{
                     </p>
                 </div>
                 <div className="ms-5">
-                    <h5><strong>Pedro Maia:</strong></h5>
+                    <h5><strong>Enzo Henrique:</strong></h5>
                     <p className="ms-3 p-2 bg-light border border-2 rounded">
                         Rem reiciendis voluptates est nesciunt quod est quidem dolorem et itaque eveniet et ratione
                         laboriosam! Nam nesciunt sunt aut quis nisi qui incidunt enim ut quam libero et consequuntur
@@ -34,7 +29,7 @@ class ConteudoProfessorComentarios extends Component{
                     </p>
                 </div>
                 <div className="ms-5">
-                    <h5><strong>Maria da Penha:</strong></h5>
+                    <h5><strong>Luíza Oliveira:</strong></h5>
                     <p className="ms-3 p-2 bg-light border border-2 rounded">
                         Rem reiciendis voluptates est nesciunt quod est quidem dolorem et itaque eveniet et ratione
                         laboriosam! Nam nesciunt sunt aut quis nisi qui incidunt enim ut quam libero et consequuntur
@@ -44,7 +39,7 @@ class ConteudoProfessorComentarios extends Component{
                     </p>
                 </div>
                 <div className="ms-5">
-                    <h5><strong>Dilma Rousseff:</strong></h5>
+                    <h5><strong>Pietro Pereira:</strong></h5>
                     <p className="ms-3 p-2 bg-light border border-2 rounded">
                         Rem reiciendis voluptates est nesciunt quod est quidem dolorem et itaque eveniet et ratione
                         laboriosam! Nam nesciunt sunt aut quis nisi qui incidunt enim ut quam libero et consequuntur
@@ -52,9 +47,6 @@ class ConteudoProfessorComentarios extends Component{
                     </p>
                 </div>
             </section>
-        );
+        )
     }
-
 }
-
-export default ConteudoProfessorComentarios;
