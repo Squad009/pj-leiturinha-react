@@ -25,7 +25,7 @@ function App() {
           <Route path='tela_realizar_quiz' element={<RealizaQuizLayout />} />
           <Route path='criar_questoes_quiz' element={<QuestoesLayout />} />
           <Route path='perfil_aluno' element={<PerfilAluno />} />
-          <Route path='conteudo_aluno' element={<ConteudoAlunoLayout/>}/>
+          <Route path='conteudo_aluno/:id' element={<ConteudoAlunoLayout/>}/>
           <Route path='leiturinhas' element={<LeiturinhaMain/>}/>
         </Route>
       </Routes>
