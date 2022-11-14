@@ -44,7 +44,7 @@ const fecharModal = () => {
 return(
 <>
     <section className='containter-fluid p-3 w-100'>
-    <form className='fundo-criativo w-50 box-login'>
+    <form className='fundo-criativo  box-login'>
       <h2>
         Cadastro do Professor
       </h2>

@@ -1,7 +1,6 @@
 .box-login {
     background-color: rgb(238, 240, 247, 0.8);
-    width: 35%;
-    min-width: 400px;
+    width: 100%;
     display: block;
     flex-direction: column;
     margin: auto;
