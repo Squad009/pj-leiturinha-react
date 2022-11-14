@@ -15,7 +15,7 @@ export default function LeiturinhaMain(){
             <HeaderApp navigationMain={<NavigationMain />} searchMain={<SearchMain />} authentication={<Authentication />} />
             <LeiturinhaBanner/>
             <div className="container">
-                <h4 className="titulo-mais-lidas title_font">As mais lidas da semana</h4>
+                <h4 className="titulo-mais-lidas title_font margem_titulo">As mais lidas da semana</h4>
                 <LeiturinhaCards/>
             </div>
             <div className="container">
