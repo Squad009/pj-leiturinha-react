@@ -11,6 +11,7 @@ import RealizaQuizLayout from './components/tela_realizar_quiz/RealizaQuizLayout
 import QuestoesLayout from './components/criar_questoes_quiz/QuestoesLayout';
 import PerfilAluno from './components/perfil/PerfilAluno';
 import ConteudoAlunoLayout from './components/conteudo_aluno/ConteudoAlunoLayout';
+import SobreMain from './components/sobre_projeto/SobreMain';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='perfil_aluno' element={<PerfilAluno />} />
           <Route path='conteudo_aluno/:id' element={<ConteudoAlunoLayout/>}/>
           <Route path='leiturinhas' element={<LeiturinhaMain/>}/>
+          <Route path='sobre_projeto' element={<SobreMain/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

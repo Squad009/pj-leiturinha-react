@@ -17,7 +17,7 @@ class NavigationMain extends Component {
                     <li><Link to="/" className="nav-link px-2 text-white">Home</Link></li>
                     <li><Link to="/leiturinhas" className="nav-link px-2 text-white">Leiturinhas</Link></li>
                     <li><Link to="/quizzes" className="nav-link px-2 text-white">Quizzes</Link></li>
-                    <li><a href="sobre.html" className="nav-link px-2 text-white">Conheça a iniciativa</a></li>.
+                    <li><Link to="/sobre_projeto" className="nav-link px-2 text-white">Conheça a iniciativa</Link></li>.
                 </ul>
             </>
         );
