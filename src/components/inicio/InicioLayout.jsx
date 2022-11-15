@@ -1,14 +1,12 @@
-import { useState } from 'react';
-import HeaderApp from '../../shared/HeaderApp';
 import InicioMain from './InicioMain';
-
-export default function InicioLayout() {
-    const [isRegisterButtonClicked, setIsRegisterButtonClicked] = useState(false);
+import withAuth from '../withAuth';
+ function InicioLayout() {
     
     return(
         <>
-            <HeaderApp setRegisterButton={setIsRegisterButtonClicked} />
-            <InicioMain registerButton={isRegisterButtonClicked} setRegisterButton={setIsRegisterButtonClicked} />
+            <InicioMain />
         </>
     );
 }
+
+export default withAuth(InicioLayout)
